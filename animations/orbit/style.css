@@ -1,0 +1,40 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orbit__main-image {
+    position: relative;
+}
+
+.orbit__main-image > img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 190px;
+    transition: all .4s ease-in-out;
+}
+
+.orbit__main-image > img:not(:first-child):hover {
+    opacity: 0;
+}
+
+.orbit__list {
+    list-style: none;
+    position: relative;
+}
+
+.orbit__item {
+    position: absolute;
+}

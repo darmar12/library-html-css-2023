@@ -1,0 +1,27 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+}
+
+.image {
+    width: 300px;
+    border-radius: 8px;
+    filter: grayscale(1);
+    transition: filter 350ms linear;
+}
+
+.image:hover {
+    filter: grayscale(0);
+}
